@@ -1,0 +1,150 @@
+body {
+  background-color: #f4f4f4;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #373737;
+}
+
+a {
+  font-weight: bold;
+  color: #c0b283;
+}
+
+a:hover {
+  color: #373737;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.current_page a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Playfair Display', serf;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+
+article h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #c0b283;
+}
+
+small {
+  font-size: 85%;
+  color: #999;
+}
+
+img.avatar {
+  height: 250px;
+  border-radius: 50%;
+  float: right;
+  padding: 5px;
+}
+
+img.portfolio {
+  border:1px solid #dcd0c0;
+  max-width:100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 800px;
+  border-top: 5px solid #dcd0c0;
+  border-bottom: 5px solid #dcd0c0;
+}
+
+header {
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 1px solid #999;
+}
+
+nav {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li::after {
+  content: "|";
+  padding: 0 8px;
+  color: #999;
+
+}
+
+nav li.last::after {
+  content: " ";
+}
+
+article {
+  margin-bottom:42px;
+}
+
+footer {
+  clear: both;
+  margin-top: 24px;
+  padding: 16px 8px;
+  border-top: 1px solid #999;
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+      text-align: center;
+    }
+
+    #wrapper {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    img {
+      display:block;
+      max-width:100%;
+    }
+
+    img.avatar {
+      clear: both;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      padding: 16px 0;
+    }
+
+    footer nav li::after {
+      content: " ";
+
+    }
+
+    footer nav li {
+      display: block;
+    }
+
+}
